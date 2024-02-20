@@ -58,6 +58,22 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header *******/
+
+header {
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 121.09px;
+    height: 79px;
+    margin-top: 108px;
+    margin-left: 48px;
+    padding: 30px;
+    gap: 10px;    
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -119,6 +135,20 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/********** Activités ***************/
+
+
+
+/********** Footer ****************/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
 
