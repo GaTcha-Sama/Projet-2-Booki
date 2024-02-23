@@ -1,4 +1,4 @@
-/****** General ***********/
+/*********************** GENERAL ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -58,20 +58,81 @@ a {
     color: var(--main-bg-color)
 }
 
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*********************** FIN DU GENERAL ***********/
+
 /****** Header *******/
 
 header {
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 80px;
 }
 
 .logo {
-    width: 121.09px;
-    height: 79px;
-    margin-top: 108px;
-    margin-left: 48px;
-    padding: 30px;
-    gap: 10px;    
+    margin-top: 30px;
+    width: 10px;
+}
+
+nav li {
+    padding-top: 15px;
+}
+
+nav li:hover {
+    padding-top: 10px;
+    border-top: 2px solid #0065FC;
+}
+
+nav a {
+    padding: 30px 30px;
+}
+
+nav a:hover {
+    font-weight: 200;
+    color: #0065FC;
+}
+
+
+/**************** MAIN ********************/
+/******** Recherche ***************/
+
+.recherche {
+    margin-bottom: 30px;    
+}
+
+.recherche h2 {
+    margin-bottom: 10px;
+}
+
+.boite {
+    height: 49px;
+}
+
+.recherche button {
+    background-color: #0065FC;
+    width: 132px;
+    height: 49px;
+    color: #DEEBFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/********** Filtres **************/
+
+.filtres {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -90,11 +151,56 @@ header {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    height: fit-content;
+}
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hotels {
+    display: flex;
+    margin-top: 33px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+.hotels img {
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hotels article {
+    width: 100%;
+    height: 100%;
+}
+
+.hotels a {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.hotels .card {
+    width: 243px;
+    height: 207.25px;
+}
+
+.hotels .card-subtitle,
+.hotels .card-title,
+.hotels .card-rating {
+    margin: 4px;
+    padding-left: 4px;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 32%;    
 }
 
 .populaires-title {
@@ -139,16 +245,62 @@ header {
 
 /********** Activités ***************/
 
+.activites {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-between;
+}
 
+.activites img {
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+}
+
+.activites .activites-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.activites .card {
+    width: 300px;
+    height: fit-content;
+}
+
+.activites .card-title {
+    padding-left: 4px;
+}
 
 /********** Footer ****************/
 
-.container {
+footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: #F2F2F2;
-    border-radius: 20px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+footer h3 {
+    padding: 4px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+footer li {
+    padding: 8px;
+}
+
+footer ul {
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+footer a:hover {
+    font-weight: 200;
+    color: #0065FC;
 }
 
 
