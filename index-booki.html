@@ -32,21 +32,45 @@
 
 <main>
     <!--------- RECHERCHE ET FILTRES -------->
+    <!----------------- Recherche ----------------->
     <div class="recherche">
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre-ville ou en pleine nature</p>
-        <form action="barreRecherche">
-            <input type="text" class="boite" placeholder="Marseille, France">
-            <button class="button"><span>Rechercher</span></button>
+        
+        <form class="barreRecherche flex">
+            <div class="containerRecherche">
+            <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input type="text" class="boite" placeholder="Marseille, France"><button class="button"><span>Rechercher</span></button>
         </form> 
-        <div class="filtres">
-            <h3>Filtres</h3>
-            <h3>Economique</h3>
-            <h3>Familial</h3>
-            <h3>Romantique</h3>
-            <h3>Animaux autorisés</h3>
+
+        <!------- Filtres ----------->
+
+        <div class="filters"> 
+            <strong>Filtres</strong>
+                <div class="filterButton">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <strong>Économique</strong>
+                </div>
+                <div class="filterButton">
+                    <i class="fa-solid fa-person"></i>
+                    <strong>Familial</strong>
+                </div>
+                <div class="filterButton">
+                    <i class="fa-solid fa-heart"></i>
+                    <strong>Romantique</strong>
+                </div>
+                <div class="filterButton">
+                    <i class="fa-solid fa-fire"></i>
+                    <strong>Nos pépites</strong> 
+                </div>  
         </div>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div class="info">
+            <div class="infoIcone">            
+                <i class="fa-solid fa-info"></i>
+            </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </div>
 
         <!-------------- HEBRGEMENTS ET POPULAIRES ----------------------------->
@@ -224,7 +248,7 @@
             <section>
                 <h2>Activités à Marseille</h2>
                     <div class="activites">       
-                        <div class="activites-cards">
+                        <div class="activites-cards flex">
                             <a href="#">
                                 <article class="card">
                                     <img src="reno-laithienne.jpg" alt="Image du Vieux-Port">
