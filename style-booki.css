@@ -328,6 +328,10 @@ nav a:hover {
 
 /********** Activités ***************/
 
+.activitesMarseille {
+    display: flex;
+}
+
 .activites {
     display: flex;
     margin-bottom: 40px;
@@ -396,7 +400,7 @@ footer a:hover {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -430,6 +434,6 @@ footer a:hover {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
     /* ... */
 }
