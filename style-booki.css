@@ -348,7 +348,15 @@ nav a:hover {
 
 /********** Activités ***************/
 
+.activites-title {
+    padding-left: 20px;
+}
+
 .activitesMarseille {
+    display: flex;
+}
+
+.activites-section {
     display: flex;
 }
 
@@ -361,7 +369,7 @@ nav a:hover {
 }
 
 .activites img {
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;    
@@ -369,13 +377,12 @@ nav a:hover {
 
 .activites .activites-card {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-between;    
 }
 
 .activites .card {
-    width: 297.5px;
-    height: fit-content;
+    width: 100%;
+    height: 439px;
 }
 
 .activites .card-title {
@@ -386,13 +393,16 @@ nav a:hover {
     margin: 15px;
 }
 
+.activites-cards a {
+    width: 25%;
+}
+
 /********** Footer ****************/
 
 footer {
     display: flex;
     justify-content: space-around;
     background-color: #F2F2F2;
-    justify-content: space-around;
 }
 
 footer h3 {
@@ -464,6 +474,7 @@ footer a:hover {
 .populaires {
     width: 100%;
     height: 252px;
+    margin-bottom: 30px;
 }
 
 .populaires-cards {
@@ -483,29 +494,42 @@ footer a:hover {
 }
 
 /*********** Activites - Tablette ************/
-    
-.activitiesTab{
-    height: auto;
+
+.activites{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.activityFrame {
-    height: 190px;
+.activites-section {
+    width: 100%;
 }
 
-.row12, .row5, .row6{
-    grid-row-end: span 4;
-    grid-column-end: span 2;
+.activites-cards {
+    width: 100%;
 }
 
-.activityDescription{
-    font-size: 1.1rem;
+.activites .card {
+    width: 100%;
+    height: 270px;
+}
+
+.activites .card img {
+    height: 80%;
+    width: 100%;
+}
+
+.activites .card-content {
+    padding-left: 4px;
 }
 
 /***************** Footer - Tablette ****************/
 
-footer div{
-    padding: 10px;
+footer {
+    display: flex;
+    flex-wrap: wrap;
 }
+
 }
 
 /********* Small devices (phones, less than 768px) **************/
@@ -611,6 +635,7 @@ nav li:hover{
     width: 100%;
     height: fit-content;
     margin-bottom: 20px;
+    border-radius: 0px;
 }
 
 .populaires-cards {
@@ -623,7 +648,7 @@ nav li:hover{
     margin-left: 0px;
 }
 
-.card {
+.populaires .card {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -641,39 +666,72 @@ nav li:hover{
     width: 100%;
 }
 
+
+
 .hebergements-title h2 {
     font-size: 1.3em;
 }
 
 .hotels {
     flex-direction: column;
+    width: 100%;
     gap: 5px;
 }
 
+.hotels .card {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.hotels a {
+    width: 100%;
+}
+
+.hotels img {
+    width: 100%;
+}
+
+.card-title {
+    font-size: .9em;
+}
+
+.card-subtitle {
+    font-size: .9em;
+}
+
+.card-rating {
+    font-size: .9em;
+}
 
 /***************** Activites - Mobile ****************/
 
-.activities{
-    margin: 55px 20px 45px;
+.activites-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.activitiesTab{
-    grid-template: repeat(6, 1fr) / 1fr;;
-    grid-auto-flow: initial;
-    gap: 24px;
+.activites {
+    width: 100%;
 }
 
-.row12, .row5, .row6{
-    grid-row-end: span 1;
-    grid-column-end: span 1;
+.activites-section {
+    width: 100%;
+}
+
+.activites a {
+    width: 100%;
 }
 
 /*************** Footer - Mobile *****************/
 
 footer{
     flex-direction: column;
-    padding: 45px 30px;
+    padding-top: 0px;
+    padding-left: 10px;
+    height: fit-content;
 }
 
 footer div{
