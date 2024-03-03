@@ -199,7 +199,7 @@ nav a:hover {
 .filters .filterButton {
     display: flex;
     border-radius: 30px;
-    border: 1px solid #4c4f5c;
+    border: 1px solid rgba(217, 217, 217, 1);
     width: 170px;
     height: 50px;
     margin-left: 10px;  
@@ -216,7 +216,7 @@ nav a:hover {
 
 .infoIcone {
     border-radius: 1rem;
-    border: 1px solid #4c4f5c;  
+    border: 1px solid rgba(217, 217, 217, 1);  
     width: 22px;
     height: 22px;    
 }
@@ -530,6 +530,10 @@ footer {
     flex-wrap: wrap;
 }
 
+.footerBox {
+    margin-right: 0px;
+
+    
 }
 
 /********* Small devices (phones, less than 768px) **************/
@@ -542,6 +546,11 @@ main{
     margin: 0px;
 }
 
+.main-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 h2{
     font-size: 1.3rem;
 }
@@ -549,28 +558,24 @@ h2{
 /************ Header - Mobile **************/
 
 header{
-    margin: 0;
     flex-direction: column;
 }
 
 .logo{
-    margin: auto;
-    margin-top: 30px;
+    margin-top: 30px; 
+    padding-left: 35%;   
 }
 
 nav ul{
     width: 100%;
+    justify-content: space-around;
+    padding-left: 0px;
 }
 
 nav li{
-    width: 50%;
-    text-align: center;
-    padding: 15px;
+    width: 100%;
+    padding-bottom: 15px;
     border-bottom: 3px solid #f2f2f2;
-}
-
-nav li a{
-    padding: inherit;
 }
 
 nav li:hover {
@@ -579,6 +584,12 @@ nav li:hover {
 
 nav li:hover{
     border-bottom: 2px solid #0065FC;
+}
+
+nav a {
+    display: flex;
+    padding: 5px;
+    margin-left: 25%;
 }
 
 /************** Recherche - Mobile ****************/
@@ -631,6 +642,10 @@ nav li:hover{
     flex-direction: column;
 }
 
+.hebergements-and-populaires section {
+    border-radius: 0px;
+}
+
 .populaires {
     width: 100%;
     height: fit-content;
@@ -658,15 +673,15 @@ nav li:hover{
     font-size: 1.3em;
 }
 
-
-
 /***************** Hebergements - Mobile ***************/
+
+.hebergements-and-populaires .hebergements {
+    background-color: white;
+}
 
 .hebergements{
     width: 100%;
 }
-
-
 
 .hebergements-title h2 {
     font-size: 1.3em;
@@ -713,16 +728,9 @@ nav li:hover{
     width: 100%;
 }
 
-.activites {
-    width: 100%;
-}
-
-.activites-section {
-    width: 100%;
-}
-
 .activites a {
-    width: 100%;
+    display: flex;
+    width: 95%;
 }
 
 /*************** Footer - Mobile *****************/
@@ -736,5 +744,6 @@ footer{
 
 footer div{
     padding: 0;
+}
 }
 }
