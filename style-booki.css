@@ -385,10 +385,11 @@ nav a:hover {
 .activites .card {
     width: 100%;
     height: 439px;
+    padding: 0px;
 }
 
 .activites .card-title {
-    padding-left: 4px;
+    padding-left: 15px;
 }
 
 .activites a {
@@ -523,6 +524,12 @@ footer a:hover {
 
 .activites .card-content {
     padding-left: 4px;
+}
+
+.activites .card-title {
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 /***************** Footer - Tablette ****************/
